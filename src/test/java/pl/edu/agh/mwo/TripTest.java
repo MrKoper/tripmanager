@@ -23,23 +23,27 @@ public class TripTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testPhotoWithNullName() {
+		@SuppressWarnings("unused")
 		Trip theTrip = new Trip(null, "Wyjazd z rodziną");
 
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testPhotoWithEmptyName() {
+		@SuppressWarnings("unused")
 		Trip theTrip = new Trip("", "Wyjazd z rodziną");
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testPhotoWithNullDescription() {
+		@SuppressWarnings("unused")
 		Trip theTrip = new Trip("Wakacje 2019", null);
 
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testPhotoWithEmptyDescription() {
+		@SuppressWarnings("unused")
 		Trip theTrip = new Trip("Wakacje 2019", "");
 	}
 
