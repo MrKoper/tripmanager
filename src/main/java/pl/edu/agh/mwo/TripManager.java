@@ -25,4 +25,17 @@ public class TripManager {
 		tripList.remove(name);
 	}
 	
+	public HashMap<String,Trip> findTrip(String keyword) {
+
+		HashMap<String,Trip> foundedTrips = new HashMap<>();
+
+		for (Trip trip : tripList.values()) {
+			String name_and_description = (trip.name() + " " + trip.description()).toLowerCase();
+			if (name_and_description.contains(keyword.toLowerCase())) {
+				foundedTrips.get(trip);
+			}
+		}
+		return foundedTrips;
+	}
+	
 }

@@ -1,7 +1,6 @@
 package pl.edu.agh.mwo;
 import static org.junit.Assert.*;
 
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -39,4 +38,5 @@ public class TripManagerTest {
 		assertEquals(0, tripManager.getTrips().size());
 		fail("chcemy zespuc");
 		}
+	
 }
